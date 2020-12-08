@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import PropTipe from "prop-types"
 const ImgAva = styled.img`
   border-radius: 50%;
 `;
@@ -8,6 +8,7 @@ const ImgAva = styled.img`
 const Container = styled.div`
   width: 300px;
   margin: 0 auto;
+  border-radius: 5px;
 `;
 
 const BoxTitle = styled.div`
@@ -32,7 +33,13 @@ const ProfileListItem = styled.li`
 display: flex;
 flex-direction:column;
 align-items:center;
-`
+background-color:teal;
+width:100px;
+border:  1px solid;
+padding-top:10px;
+padding-bottom:10px;
+
+`;
 
 function Profile({ name, tag, location, avatar, stats }) {
   return (
@@ -59,6 +66,19 @@ function Profile({ name, tag, location, avatar, stats }) {
       </ProfileList>
     </Container>
   );
+}
+
+Profile.defaultProps={
+avatar:
+'https://dummyimage.com/640x480/2a2a2a/ffffff&text=Product+image+placeholder',
+
+};
+
+Profile.PropTipe = {
+  name:PropTipe.string.isRequired,
+  tag:PropTipe.string.isRequired,
+  location:PropTipe.string.isRequired,
+  stats:PropTipe.string.isRequired,
 }
 
 export default Profile;

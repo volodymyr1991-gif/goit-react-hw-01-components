@@ -42,7 +42,7 @@ function Statistic({statistic}) {
 Statistic.propTipes = {
     statistic:PropTipes.arrayOf(
         PropTipes.exact({
-            id: PropTipes.string.isRequired,
+            id: PropTipes.number.isRequired,
             label: PropTipes.string.isRequired,
             percentage:PropTipes.number.isRequired
         })

@@ -22,7 +22,7 @@ function Panel ({title, children}){
     )
 }
 
-// { "id": "id-1", "label": ".docx", "percentage": 22 }
+
 
 Section.defaultProps = {
     title:""
