@@ -30,12 +30,13 @@ justify-content:space-between;
 `;
 
 const ProfileListItem = styled.li`
+color:#fff;
 display: flex;
 flex-direction:column;
 align-items:center;
 background-color:teal;
 width:100px;
-border:  1px solid;
+border:  1px solid ;
 padding-top:10px;
 padding-bottom:10px;
 

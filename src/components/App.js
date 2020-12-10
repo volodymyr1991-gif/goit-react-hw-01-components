@@ -1,36 +1,35 @@
 import React from "react";
-// import Profile from "./Prifile"
-// import user from "../user.json"
-// import Profile from "./profile"
-// import statistical from "../statistical-data.json";
-// import Panel from "./section";
-// import Statistic from "./statistic";
-// import FrendList from "./frendList"
-// import friends from "../friends.json"
+import user from "../user.json"
+import Profile from "./profile"
+import statistical from "../statistical-data.json";
+import Panel from "./section";
+import Statistic from "./statistic";
+import FrendList from "./frendList"
+import friends from "../friends.json"
 import TansactionHistiry from "./TransactionHistory "
 import transaction from "../transaction.json"
 
-// console.log(user.name);
+
 export default function App() {
   return (
     <>
      
 {/* ЗАВДАННЯ НОМЕР ОДИН */}
-     {/* <Profile
+     <Profile
      name={user.name}
      tag={user.tag}
      location={user.location}
      avatar={user.avatar}
      stats={user.stats}
-     /> */}
-     {/* <Profile stats={user.stats}/>  */}
+     />
+   
     {/* завдання номер 2 */}
-      {/* <Panel title="Upload stats">
+      <Panel title="Upload stats">
          <Statistic statistic={statistical} />
-      </Panel> */}
+      </Panel>
 
       {/* ЗАВДАННЯ НОМЕР 3 */}
-      {/* <FrendList frends={friends}/> */}
+      <FrendList frends={friends}/>
 
       {/* ЗАВДАННЯ НОМЕР 4 */}
 <TansactionHistiry transaction={transaction}/>
